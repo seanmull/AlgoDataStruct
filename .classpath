@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry excluding="UPenn/Efficiency/|UPenn/BST/|UPenn/DLPTier/|UPenn/LinkedListUtils/|UPenn/BattleShip/|UPenn/|UPenn/Collections/|UPenn/MovieDB/|UPenn/Reliability/|UPenn/HtmlValidator/|UPenn/MovieRatings/" kind="src" path=""/>
+	<classpathentry excluding="Efficiency/|BST/|DLPTier/|LinkedListUtils/|BattleShip/|Collections/|MovieDB/|Reliability/|HtmlValidator/|MovieRatings/" kind="src" path="UPenn"/>
+	<classpathentry kind="src" path="UPenn/BattleShip"/>
+	<classpathentry kind="src" path="UPenn/BST"/>
+	<classpathentry kind="src" path="UPenn/Collections"/>
+	<classpathentry kind="src" path="UPenn/DLPTier"/>
+	<classpathentry kind="src" path="UPenn/Efficiency"/>
+	<classpathentry kind="src" path="UPenn/HtmlValidator"/>
+	<classpathentry kind="src" path="UPenn/LinkedListUtils"/>
+	<classpathentry kind="src" path="UPenn/MovieDB"/>
+	<classpathentry kind="src" path="UPenn/MovieRatings"/>
+	<classpathentry kind="src" path="UPenn/Reliability"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
