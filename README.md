@@ -1,15 +1,14 @@
-# Data_Structures_Algorithms
+<h1> Data_Structures_Algorithms </h1>
 
 Repo consist of work from multiple learning platforms such as LeetCode, Upenn Software Development course, and freeCode camp.
-Currently working leetCode algorythms for interview preperation.  Section is divided as follows:
+Currently working leetCode algorithms for interview preperation.  Section is divided as follows:
 
-In work - List of problems currently in work.
+* In work - List of problems currently in work.
+* Planned firing order - Current proirity items.
+* Backlog - All tasks left to do for covering all relevent topics.
 
-Planned firing order - Current proirity items.
+<h2> In work </h2>
 
-Backlog - All tasks left to do for covering all relevent topics.
-
-In work 	
 1. StackMin
 1. StackOfPlates
 1. SortStack
@@ -17,7 +16,7 @@ In work
 1. AnimalShelter
 1. SimplifyPath    
          
-Planned firing order
+<h2> Planned firing order </h2>
 
 1. Hash Tables
 1. Implement a HashTable with simple Hashing functions
@@ -27,50 +26,48 @@ Planned firing order
 1. Print binary tree using DFS (in-order, preorder and post order — all three of them) and BFS.
 1. Do 3 problems
 
+<h2> Backlog </h2>
+
+<h3> Data Structures </h3>
+
+1. Binary Heaps & Priority Queue
+1. Graphs
+1. Trie
+	
+<h3> Algorithms </h3>
+
+1. Heapsort — Sort it in-place to get O(1) space
+1. Selections — Kth Smallest Elements (Sort, QuickSelect, Mediums of Mediums) — Implement all three ways
+1. Permutations
+1. Subsets
+1. BFS Graph
+1. DFS Graph
+1. Dijkstra’s Algorithm (just learn the idea — no need to implement)
+1. External Sort — No implementation; Just know the concept.
+1. NP-Complete (Video) — Just know the concept
+1. Topological Sort
+1. Detect cycle in an undirected graph
+1. Detect a cycle in a directed graph
+1. Count connected components in a graph
+1. Find strongly connected components in a graph
+
+<h3> To do tasks </h3>
+
+1. Implement a Graph using Adjacency List, and then write functions for BFS & DFS.\
+1. Memorize time & space complexities for common algorithms. Here’s an interesting website.
+1. Implement a trie.
+1. Learn these important bit manipulation tricks.
+	
+	
+<h2> Completed tasks </h2>
+
+1. Arrays
+1. Strings
+1. Bit Manipulation & Numbers — difference btw Unsigned vs signed numbers
+1. Recursion problems
+1. Quicksort/Mergesort
+1. Dynammic Array
+1. Binary search
+1. Linked Lists
+	
 Source - https://www.alimirio.com/posts/read-this-before-you-start-solving-problems-on-leetcode-prep-work
-Data Structures
-	Binary Heaps & Priority Queue
-	Graphs
-	Trie
-	
-Algorithms
-	Heapsort — Sort it in-place to get O(1) space
-	Selections — Kth Smallest Elements (Sort, QuickSelect, Mediums of Mediums) — Implement all three ways
-	Permutations
-	Subsets
-	BFS Graph
-	DFS Graph
-	Dijkstra’s Algorithm (just learn the idea — no need to implement)
-	External Sort — No implementation; Just know the concept.
-	NP-Complete (Video) — Just know the concept
-	Topological Sort
-	Detect cycle in an undirected graph
-	Detect a cycle in a directed graph
-	Count connected components in a graph
-	Find strongly connected components in a graph
-	Prep work
-	Once you are comfortable with the data structures & algorithms above, do the following exercise multiple times (at least 2–3 times) until you can do them with your eyes closed.
-
-To do tasks
-	Implement a Graph using Adjacency List, and then write functions for BFS & DFS.\
-	Memorize time & space complexities for common algorithms. Here’s an interesting website.
-	Implement a trie.
-	Learn these important bit manipulation tricks.
-	
-	
-Completed tasks
-	Arrays
-	Strings
-	Bit Manipulation & Numbers — difference btw Unsigned vs signed numbers
-	Recursion problems
-	Quicksort/Mergesort
-	Dynammic Array
-	Binary search
-	Linked Lists
-
-Maybe stuff you want to get back to
-	sort colors in one pass
-	Search for Rotated Sorted Array (not clear what is expected)
-	allConstruct recursion
-	allConstruct memoization
-	allConstruct tabulation
