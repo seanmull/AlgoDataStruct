@@ -19,7 +19,7 @@ In work
          
 Planned firing order
 
-1.Hash Tables
+1. Hash Tables
 1. Implement a HashTable with simple Hashing functions
 1. Do 3 problems
 1. Binary Search Tree
