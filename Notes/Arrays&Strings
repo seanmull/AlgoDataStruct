@@ -1,0 +1,63 @@
+Some basic concepts
+Strings - https://en.wikipedia.org/wiki/String_(computer_science)
+- String are often implemented as a array of characters(char). 
+- The char can be usually encoded as ASCII(256) or UNICODE.
+- They are immutable in Java.  Which mean they cannot be changed.
+- Instant access to individual elements is allowed.
+- String builder can used to append strings by using a resizeable array
+   
+Arrays
+- Stored in a contiguous chunk of memory.
+- Normal arrays are set in size.  In other words they are static.
+- Can be made of many data types int, char, string etc. 
+
+Strengths
+-Simple data structures.  Can build almost anything with it.
+-Allows instant 0(1) time for lookup.
+
+Weaknesses
+-Strings are immutable which means each time you append you have to copy. Which is 0(n^2) time.
+-Arrays are of fixed size.
+-Filling an array is O(n) time.
+
+How to implement Arrays and Strings in Java
+
+//Strings
+
+//For making a simple string
+String s = "abc";
+
+//To make a char array
+char[] charArray = s.toCharArray(); //note '' means char "" means string
+
+//To index a Array
+System.out.println("The first char in charArray is " +charArray[0]);
+	
+
+//Stringbuilder
+StringBuilder strBuilderStr = new StringBuilder("abcdefg");
+System.out.println("strBuilderStr is " +strBuilderStr);
+strBuilderStr.append('X');
+System.out.println("strBuilderStr+'X' is " +strBuilderStr);
+
+//Arrays
+
+//To build a 1-D array
+int[] array; //declaration only
+int[] array2 = new int[10]; //empty with size allocation
+int[] array3 = new int[] {1,2,3,4}; //instantated
+
+//To build a 2-D array
+int[][] array2D = new int[][] {{1,2},{3,4}};
+
+//Typical type implementations
+char[] array4;
+int[] array5;
+float[] array6;
+String[] array7;
+boolean[] array8;
+
+//Useful for printing arrays
+System.out.println(Arrays.toString(output));
+
+

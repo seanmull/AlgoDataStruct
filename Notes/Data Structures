@@ -1,0 +1,51 @@
+Data Structures
+
+Dynamic Array
+Specification
+https://www.javatpoint.com/dynamic-array-in-java
+
+It is an array that can resize itselfs when elements
+are added or dropped.
+
+Typical implementation is that it has larger space then
+needed to store elements.  Once you try to add an element
+past its capacity it would create a larger array then copy
+elements into that array.
+
+Removing elements would shift all the elements in between
+the one that was removed.  For example, if i removed the third element,
+element four and five would be moved to element 3 location.
+
+An dynamic array has the following properties
+Size
+
+Methods
+Add
+Remove
+
+Linked list
+https://www.geeksforgeeks.org/linked-list-set-1-introduction/
+This is for a single linked list
+Linked list offers the advantage over an array in that
+the size is not fixed.  In arrays you have to create a whole
+new chunk of memory everytime you want to make it bigger.
+Moving elements into a sorted an array is expensive from
+a runtime and memory perspective since it may involve shifting
+many elements.
+However there are drawbacks.
+For one you cannot directly access elements like you can
+in arrays.  You need extra memory for pointers.  Its also
+not cache friendly since every element is stored in different
+parts of memory.
+
+Linked lists consist of the following
+Linked list(class)
+Head
+Nodes (class)
+	Data
+	Pointer
+	
+Typical methods
+Add
+Remove
+Print

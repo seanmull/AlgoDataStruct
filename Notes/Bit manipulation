@@ -1,0 +1,129 @@
+Some basic concepts
+
+8 bits per byte
+int is 4 bytes => 32 bits => between +2 - 2 million
+
+Converting binary to decimal is as follows:
+1010, since 1(2⁰) + 0(2¹) + 1(2²) + 0(2³) = 10
+So in decimal we go from 0-9 (10 options) while in binary we have 0-1 (2 options)
+
+Operations 
+	
+	(check using this https://onlinetoolz.net/bitshift)
+	Negation ~x
+	0101 -> 1010 (we flip the 0 and 1)
+	
+	Left shift  x << (n) where n is a number (<<< is the logical shift variant where the sign is shifted too)
+	101010 -> 1010100 (shift all numbers left) (n = 1)
+	Note: Left most position is ignored
+	
+	Right shift  x >> (n) where n is a number
+	101010 -> 10101 (shift all numbers right) (n = 1) arithmetic shift
+	
+	1 & 1 = 1
+	0 & 0 = 0
+	1 & 0 = 0
+	0 & 1 = 0
+	
+	1 | 1 = 1
+	0 | 0 = 0
+	1 | 0 = 1
+	0 | 1 = 1
+	
+	1 ^ 1 = 0
+	0 ^ 0 = 0
+	0 ^ 1 = 1
+	1 ^ 0 = 1
+	
+	& (and)
+	1100 & 1011 = 1000 (since only first digit is in both)
+	
+	101 & 001 = 001
+	
+	| (or)
+	1100 & 1011 = 1111 (since all digits have at least on in each)
+	
+	^ (xor)
+	1100 & 1011 = 0111 (since the first digit is in both)
+	
+	1100 & 1100 = 
+	
+	(https://www.calculator.net/binary-calculator.html)
+	Add
+	20 + 10 = 30
+	10100 + 1010 = 11110
+	
+	Subtract
+	20 - 10 = 10
+	10100 - 1010 = 1010
+	
+	Multiply
+	20 * 10 = 200
+	10100 * 1010 = 11001000
+	
+	Divide
+	20 / 10 = 2
+	10100 / 1010 = 10
+	
+	Getting bits
+	And operation clears all bits except the shifted 1
+	If its zero it will return false
+	num & (1 << i) != 0
+	
+	Setting bits
+	All the other zeros will not effect num but the 1
+	num | (1 << i)
+	
+	Clearing bit
+	Same as getting bit but in reverse
+	All the 1s will just mirror num
+	The one 0 will clear the bit
+	num & ~(1 << i);
+	
+	Updating bit
+	value = bitIs1 ? 1 : 0;
+	mask = ~(1 << i)
+	return (num & mask) | (value << i)
+	
+	Signed vs Unsigned
+	First place in memory for binary is reserved for negative sign if signed
+	For Unsigned this place is used to store a bigger number if needed.
+	
+Typical problems (https://www.geeksforgeeks.org/bitwise-operators-in-c-cpp/)
+Find the Missing Number
+swap two numbers without using a temporary variable
+A Memory Efficient Doubly Linked List
+Find the two non-repeating elements.
+Find the two numbers with odd occurences in an unsorted-array.
+Add two numbers without using arithmetic operators.
+Swap bits in a given number/.
+Count number of bits to be flipped to convert a to b .
+Find the element that appears once.
+Detect if two integers have opposite signs.
+
+
+How to use bitwise operation in java
+
+Add a&b
+Or a|b
+Xor a^b
+Compliment ~a
+
+You can also do the shorthand
+a = a & b => a &= b
+
+a = 10
+a>>1 = 5 (signed shift)
+
+a = -10
+a>>>1 = 2147483643 (unsigned shift)
+
+//To represent binary version of int
+int n = 7;
+String binaryString = Integer.toBinaryString(n);
+assertEquals("111", binaryString);
+
+
+
+//practice info https://www.techiedelight.com/bit-manipulation-interview-questions/
+//https://www.geeksforgeeks.org/bitwise-operators-in-c-cpp/

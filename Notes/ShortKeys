@@ -1,0 +1,8 @@
+Delete line Control-D
+Move line alt up or down (this also selects the line)
+Type sysout and Control space to do println
+Fix indent Control I
+Switch perspectives Alt 1-3 (Git,Debug,Java)
+Run Control F11
+Debug F11
+Organize imports Control shift O  
