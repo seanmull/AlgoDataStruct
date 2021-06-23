@@ -1,4 +1,7 @@
-<h1> Data_Structures_Algorithms </h1>
+<h1> Data Structures & Algorithms </h1>
+
+<h2>Gists</h2>
+TODO
 
 Repo consist of work from multiple learning platforms such as LeetCode, Upenn Software Development course, and freeCode camp.
 Currently working leetCode algorithms for interview preperation.  Section is divided as follows:
