@@ -18,6 +18,7 @@ In work
 1. SimplifyPath    
          
 Planned firing order
+
 1.Hash Tables
 1. Implement a HashTable with simple Hashing functions
 1. Do 3 problems
