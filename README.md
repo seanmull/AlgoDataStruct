@@ -4,25 +4,27 @@ Repo consist of work from multiple learning platforms such as LeetCode, Upenn So
 Currently working leetCode algorythms for interview preperation.  Section is divided as follows:
 
 In work - List of problems currently in work.
+
 Planned firing order - Current proirity items.
+
 Backlog - All tasks left to do for covering all relevent topics.
 
 In work 	
-	StackMin
-	StackOfPlates
-	SortStack
-	QueueViaStacks
-	AnimalShelter
-	SimplifyPath    
+1. StackMin
+1. StackOfPlates
+1. SortStack
+1. QueueViaStacks
+1. AnimalShelter
+1. SimplifyPath    
          
 Planned firing order
-	Hash Tables
-	Implement a HashTable with simple Hashing functions
-	Do 3 problems
-	Binary Search Tree
-	Tree Traversals — BFS, DFS (in-order, pre-order, post-order): Implement Recursive and Iterative
-	Print binary tree using DFS (in-order, preorder and post order — all three of them) and BFS.
-	Do 3 problems
+1.Hash Tables
+1. Implement a HashTable with simple Hashing functions
+1. Do 3 problems
+1. Binary Search Tree
+1. Tree Traversals — BFS, DFS (in-order, pre-order, post-order): Implement Recursive and Iterative
+1. Print binary tree using DFS (in-order, preorder and post order — all three of them) and BFS.
+1. Do 3 problems
 
 Source - https://www.alimirio.com/posts/read-this-before-you-start-solving-problems-on-leetcode-prep-work
 Data Structures
