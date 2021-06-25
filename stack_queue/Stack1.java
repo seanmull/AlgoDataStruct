@@ -4,12 +4,10 @@ package stack_queue;
 	public class Stack1 {
 		Node top;
 		int size;
-		int maxSize;
 		
 		Stack1(){
 			this.top = null;
 			this.size = 0;
-			this.maxSize = 3;
 		}
 		
 		public static class Node{

@@ -3,9 +3,40 @@ package stack_queue;
 import java.util.HashMap;
 
 public class StackOfPlates {
+	Stack1 stack;
+	HashMap<Integer,Stack1> stacks;
+	int maxSize;
+	int numOfStacks;
+	
+	StackOfPlates(int max){
+		this.stack = new Stack1();
+		this.stacks = new HashMap<Integer,Stack1>();
+		this.maxSize = max;
+		this.numOfStacks = 1;
+	}
 	
 	
+	public void add(int val) {
+		if(this.stack.size == this.maxSize) {
+			stacks.put(numOfStacks,stack);
+			this.stack = new Stack1();
+			this.stack.push(val);
+			this.stack.top.below = this.stacks.get(numOfStacks).top;
+			numOfStacks++;
+		}else {
+			this.stack.push(val);
+		}
 
+	}
+	
+	public void print() {
+		while(this.stack.top != null) {
+			System.out.println(this.stack.peek());
+			this.stack.top = this.stack.top.below;
+		}
+	}
+	
+	
 	public static void main(String[] args) {
 		/*3 Stack of Plates: Imagine a (literal) stack of plates. If the stack gets too high, it might topple.Therefore, in real life, 
 		 * we would likely start a 
@@ -17,34 +48,11 @@ public class StackOfPlates {
 		FOLLOW UP
 		Implement a function popAt ( int index) which performs a pop operation on a specific sub-stack.*/
 		
-		/*
-		 * Stack s  => 2 < head
-		 * Stack s2 => 3 < head
-		 *  
-		 * Link the below of s2 head to head of s (if s is full)
-		 * 
-		 * 
-		 */
-		HashMap<Integer,Stack1> h = new HashMap<Integer,Stack1>();
-		
-		Stack1 s = new Stack1();
-		s.push(2);
-		h.put(1, s);
-		//if current s if full make a new one
-		s = new Stack1();
-		s.push(3);
-		s.top.below = h.get(1).top;
-		h.put(2, s);
-		System.out.println(h.get(1).top.data);
-		System.out.println(h.get(2).top.data);
-		System.out.println(h.get(2).top.below.data);
-		//use a map of stacks with a corresponding index
-		// key       value
-		//  1       3 -> 4 -> 5
-		//  2       6 -> 6 -> 9
-		
-		
-
+		StackOfPlates stacks = new StackOfPlates(2);
+		for(int i = 0; i < 10; i++) {
+			stacks.add(i);
+		}
+		stacks.print();
 	}
 
 }
