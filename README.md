@@ -1,8 +1,5 @@
 <h1> Data Structures & Algorithms </h1>
 
-<h2>Gists</h2>
-TODO
-
 Repo consist of work from multiple learning platforms such as LeetCode, Upenn Software Development course, and freeCode camp.
 Currently working leetCode algorithms for interview preperation.  Section is divided as follows:
 
@@ -12,8 +9,6 @@ Currently working leetCode algorithms for interview preperation.  Section is div
 
 <h2> In work </h2>
 
-1. StackMin
-1. StackOfPlates
 1. SortStack
 1. QueueViaStacks
 1. AnimalShelter
