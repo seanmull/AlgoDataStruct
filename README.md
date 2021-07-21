@@ -9,11 +9,22 @@ Currently working leetCode algorithms for interview preperation.  Section is div
 
 <h2> In work </h2>
 
-
 1. Hash Tables
-2. 
-3. Binary Tree
-4. Binary Heaps   
+2. ArrayPair
+3. Intersection of Array
+4. Key Pair
+5. KFreq Element
+6. Binary Tree
+7. CheckForBalence
+8. CheckIfIdentical
+9. HeightofBinary
+10. MinDepthofBinary
+11. SymTree
+12. ZigZag
+13. Binary Heaps
+14. KthLargestElement
+15. MinCostOfRope
+16. RearrangeChar   
          
 <h2> Planned firing order </h2>
 
