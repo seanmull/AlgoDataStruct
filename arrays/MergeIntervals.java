@@ -37,9 +37,9 @@ public class MergeIntervals {
 		//intervals.add(new Integer[] {15,18});
 		
 		for(int i = 0; i < intervals.size() - 1; i++) {
-			//System.out.println(Arrays.toString(intervals.get(i)));
+			System.out.println(Arrays.toString(intervals.get(i)));
 			for(int j = i + 1; j < intervals.size(); j++) {
-				//System.out.println(Arrays.toString(intervals.get(j)));
+				System.out.println(Arrays.toString(intervals.get(j)));
 				if(intervals.get(i)[1] >= intervals.get(j)[0]) {
 					intervals.get(j)[0] = intervals.get(i)[0];
 					intervals.remove(i);
