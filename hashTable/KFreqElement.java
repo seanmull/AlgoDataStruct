@@ -1,7 +1,8 @@
 package hashTable;
 
 public class KFreqElement {
-	/*Given a non-empty array of integers, find the top k elements which have the highest frequency in the array. If two numbers have the same frequency then the larger number should be given preference. 
+	/*Given a non-empty array of integers, find the top k elements which have the highest frequency in the array. 
+	 * If two numbers have the same frequency then the larger number should be given preference. 
 
 	Example 1:
 
