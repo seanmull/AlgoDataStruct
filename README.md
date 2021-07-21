@@ -9,26 +9,27 @@ Currently working leetCode algorithms for interview preperation.  Section is div
 
 <h2> In work </h2>
 
-1. SortStack
-1. QueueViaStacks
-1. AnimalShelter
-1. SimplifyPath    
+
+1. Hash Tables
+2. 
+3. Binary Tree
+4. Binary Heaps   
          
 <h2> Planned firing order </h2>
 
-1. Hash Tables
 1. Implement a HashTable with simple Hashing functions
-1. Do 3 problems
 1. Binary Search Tree
 1. Tree Traversals — BFS, DFS (in-order, pre-order, post-order): Implement Recursive and Iterative
 1. Print binary tree using DFS (in-order, preorder and post order — all three of them) and BFS.
-1. Do 3 problems
+1. SortStack
+1. QueueViaStacks
+1. AnimalShelter
+1. SimplifyPath  
 
 <h2> Backlog </h2>
 
 <h3> Data Structures </h3>
 
-1. Binary Heaps & Priority Queue
 1. Graphs
 1. Trie
 	
