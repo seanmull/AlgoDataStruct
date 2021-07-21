@@ -1,5 +1,5 @@
 
-public class BattleshipGame {
+public class BattleShipGame {
 
 	public static void main(String[] args) { 
 		//In this class you will set up the game 
