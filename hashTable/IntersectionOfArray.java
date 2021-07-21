@@ -1,5 +1,8 @@
 package hashTable;
 
+import java.util.HashSet;
+import java.util.Set;
+
 public class IntersectionOfArray {
 	/*Given two arrays a[] and b[] respectively of size n and m, the task is to print the count of elements 
 	 * in the intersection (or common elements) of the two arrays.
@@ -32,8 +35,30 @@ public class IntersectionOfArray {
 	in the intersection of two arrays.*/
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
+		//int a[] = {89, 24, 75, 11, 23};
+		//int b[] = {89, 2, 4};
+		int[] a = {1, 2, 3, 4, 5, 6};
+		int[] b = {3, 4, 5, 6, 7};
+		int[] smaller;
+		Set<Integer> larger = new HashSet<Integer>();
+		
+		if(a.length > b.length) {
+			smaller = a;
+			larger = changeArrayToSet(b);
+		}else{
+			smaller = b;
+			larger = changeArrayToSet(a);
+		}
+		
+		int count = 0;
+		for(int ele : smaller) if(larger.contains(ele)) count++;
+		System.out.println(count);
+	}
+	
+	private static Set<Integer> changeArrayToSet(int[] arr){
+		Set<Integer> hashSet = new HashSet<Integer>();
+		for(int a : arr) hashSet.add(a);
+		return hashSet;
 	}
 
 }
