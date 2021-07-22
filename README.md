@@ -11,9 +11,7 @@ Currently working leetCode algorithms for interview preperation.  Section is div
 
 1. Hash Tables
 2. ArrayPair
-3. Intersection of Array
-4. Key Pair
-5. KFreq Element
+3. 4 more problems
 6. Binary Tree
 7. CheckForBalence
 8. CheckIfIdentical
