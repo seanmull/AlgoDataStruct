@@ -5,6 +5,7 @@ import java.util.HashSet;
 import java.util.Iterator;
 import java.util.List;
 import java.util.Set;
+import java.util.Stack;
 
 public class InOrderTrav {
 	/*Given a binary tree. Find the inorder traversal of the tree without using recursion.
@@ -118,10 +119,23 @@ public class InOrderTrav {
 	}
 	
 	public void inOrderTravIter (Node n) {
-		if(n != null) {
-			inOrderTrav(n.left);
-			printNode(n);
-			inOrderTrav(n.right);
+		Stack<Node> stack = new Stack<Node>();
+		Node current = n;
+		
+		//don't push anything thats not a node
+		//once everything has been popped exit the loop
+		while(current != null || !stack.isEmpty()) {
+			//this just allows the for the first iteration when the stack is empty
+			while(current != null) {
+				stack.push(current);
+				current = current.left;
+			}
+			//current is now at a null position in the tree
+			//take the most recent node
+			Node top = stack.pop();
+			printNode(top);
+			//set the current to whatever was to the right of it
+			current = top.right;
 		}
 	}
 	
@@ -182,14 +196,13 @@ public class InOrderTrav {
 
 	public static void main(String[] args) {
 		InOrderTrav tree1 = new InOrderTrav();
-		tree1.add(tree1.root, 10);
-		tree1.add(tree1.root, 5);
+		tree1.add(tree1.root, 4);
+		tree1.add(tree1.root, 3);
 		tree1.add(tree1.root, 1);
-		tree1.add(tree1.root, 39);
-		tree1.add(tree1.root, 49);
-		tree1.add(tree1.root, 89);
-		tree1.add(tree1.root, 99);
-		tree1.inOrderTrav(tree1.root);
+		tree1.add(tree1.root, 2);
+		tree1.add(tree1.root, 5);
+		tree1.add(tree1.root, 6);
+		tree1.inOrderTravIter(tree1.root);
 		
 
 	}

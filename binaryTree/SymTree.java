@@ -198,7 +198,7 @@ public class SymTree {
 		tree.root.right.right  = new Node(2);
 		//List<Integer> list1 = getOrderedListOfNodeValues(tree.root.left, new ArrayList<Integer>());
 		//List<Integer> list2 = getRevOrderedListOfNodeValues(tree.root.right, new ArrayList<Integer>());
-		System.out.println(tree.symTree(tree.root.left, tree.root.right));
+		System.out.println(symTree(tree.root.left, tree.root.right));
 		//System.out.println(list2);
 		
 		
