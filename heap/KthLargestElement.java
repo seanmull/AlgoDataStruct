@@ -1,7 +1,11 @@
 package heap;
 
+import java.util.Comparator;
+import java.util.PriorityQueue;
+
 public class KthLargestElement {
-	/*Given an input stream arr[] of n integers. Find the Kth largest element for each element in the stream and if the Kth element doesn't exist, return -1.
+	/*Given an input stream arr[] of n integers. Find the Kth largest element for each element in the stream and if the Kth element 
+	 * doesn't exist, return -1.
 
 	Example 1:
 
@@ -24,8 +28,12 @@ public class KthLargestElement {
 	
 	
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
+		int arr[] = {1,2,3,4,5,6};
+		PriorityQueue<Integer> maxHeap = new PriorityQueue<>(Comparator.reverseOrder());
+		for(int num : arr) maxHeap.add(num);
+		int k = 4;
+		for(int i = 0; i < k; i++) maxHeap.remove();
+		System.out.println(maxHeap.peek());
 	}
 
 }
